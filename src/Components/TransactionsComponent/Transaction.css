@@ -1,0 +1,99 @@
+.transactionsCont {
+  background-image: url(../../../public/assets/img/img11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transactionsCont > * {
+  z-index: 10;
+  position: relative;
+}
+
+.transactionsCont::after {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  z-index: 0;
+}
+
+.transactionsCont .transactionHeader table {
+  width: 1400px;
+  margin: auto;
+  height: 200px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-collapse: collapse;
+}
+
+.transactionsCont .transactionHeader table tr th {
+  padding: 10px 0;
+  background-color: #000000;
+  color: #f7c853;
+}
+
+.transactionsCont .transactionHeader table tr td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.transactionsCont .transactionHeader table tr td button {
+  background-color: #f7c853;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 7px;
+}
+
+.transactionsCont .transactionHeader table tr td button:hover {
+  background-color: #DAA520;
+}
+
+.transactionsCont .transactionHeader table tr:nth-child(even) {
+  background-color: #82DBD8;
+}
+
+.transactionsCont .transactionHeader table tr:nth-child(odd) {
+  background-color: #B3E8E5;
+}
+
+.transactionsCont .transactionHeader .transferBtn {
+  text-align: center;
+  margin: 2em 0 0;
+}
+
+.transactionsCont .transactionHeader .transferBtn button {
+  background-color: #f7c853;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 1em 1em;
+}
+
+.transactionsCont .transactionHeader .transferBtn button:hover {
+  background-color: #DAA520;
+  color: #000000 !important;
+}
+/*# sourceMappingURL=Transaction.css.map */

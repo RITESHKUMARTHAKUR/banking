@@ -1,0 +1,85 @@
+.transactionsCont{
+    background-image: url(../../../public/assets/img/img11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > *{
+        z-index: 10;
+        position: relative;
+    }
+
+    &::after{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: block;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        z-index: 0;
+
+    }
+
+    .transactionHeader{
+        table{
+            width:1400px;
+            margin: auto;
+            height: 200px;
+            transition: .3s;
+            border-collapse: collapse;
+            tr{
+                th{
+                    padding: 10px 0;
+                    background-color: #000000;
+                    color: #f7c853;
+                    // border: 2px solid black;
+                }
+                td{
+                    padding: 10px 0;
+                    // border: 2px solid black;
+                    text-align: center;
+                    button{
+                        background-color:#f7c853;
+                        font-weight:700;
+                        cursor: pointer;
+                        border:none;
+                        border-radius: 5px;
+                        padding:7px 7px;
+                        &:hover{
+                            background-color: #DAA520;
+                        }
+                    }
+                }
+                &:nth-child(even){
+                    background-color: #82DBD8;
+                }
+                &:nth-child(odd){
+                    background-color: #B3E8E5;
+                }
+            }
+        }
+        .transferBtn{
+            text-align: center;
+            margin:2em 0 0;
+            button{
+                background-color:#f7c853;
+                font-weight:700;
+                cursor: pointer;
+                border:none;
+                border-radius: 6px;
+                padding:1em 1em;
+                &:hover{
+                    background-color: #DAA520;
+                    color: #000000 !important;
+                }
+            }
+        }
+    }
+}

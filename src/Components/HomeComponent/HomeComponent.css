@@ -1,0 +1,69 @@
+.homeContainer {
+  position: relative;
+  background-image: url(../../../public/assets/img/img11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-blend-mode: overlay;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.homeContainer > * {
+  z-index: 10;
+  position: relative;
+}
+
+.homeContainer::after {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: .4;
+  z-index: 0;
+}
+
+.homeContainer .center-heading {
+  padding: 10px;
+  color: #FFF;
+}
+
+.homeContainer .center-heading .first-heading {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.homeContainer .center-heading .second-heading {
+  font-size: 4em;
+  letter-spacing: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-bottom: .5em;
+}
+
+.homeContainer .center-heading .start-btn {
+  color: #000;
+  background-color: #f7c853;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homeContainer .center-heading .start-btn:hover {
+  background-color: #edbb3e;
+}
+/*# sourceMappingURL=HomeComponent.css.map */
